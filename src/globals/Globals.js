@@ -13,7 +13,9 @@ const rWidths = {
 };
 
 const rHeights = {
-  headerHeight: "4.5rem"
+  headerHeight: "4.5rem",
+  headerHeightNum: 4.5,
+  modalFullSizeTopSpace: "6.5rem"
 };
 
 // Color names received from http://chir.ag/projects/name-that-color/#212529
@@ -23,9 +25,15 @@ const colors = {
   malibu: "#78D0FB"
 };
 
+const zIndexes = {
+  modal: 5,
+  modalClose: 7
+}
+
 module.exports = {
   clientLinks,
   rWidths,
   rHeights,
-  colors
+  colors,
+  zIndexes
 };
