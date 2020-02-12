@@ -14,7 +14,7 @@ const DivBackground = styled.div`
   z-index: ${zIndexes.modal};
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0,0,0,0.8);
   display: ${props => (props.isOpen === "true" ? "block" : "none")};
 `;
 
@@ -26,6 +26,7 @@ const DivContainer = styled.div`
   height: 80%;
   margin: auto;
   background-color: ${modalBackgroundColor};
+  box-shadow: 10px 12px 10px 1px rgba(0,0,0,0.5);
   /* styled-components handles the different browsers for you
   -webkit-touch-callout: none;
   -webkit-user-select: none; Webkit

@@ -13,10 +13,22 @@ const DivWrapper = styled.div`
   width: 100%;
 `;
 
-const DivButtonTypes = styled.div`
+const DivButtons = styled.div`
   display: flex;
   width: 100%;
   padding: 2rem;
+`;
+
+const Button = styled.button`
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 2rem 6rem;
+  border-radius: 0.6rem;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 //=========================================== component ===========================================
@@ -24,11 +36,11 @@ const Modals = props => {
   return (
     <DivWrapper>
       <h1 style={{ alignSelf: "center" }}>Select Modal</h1>
-      <DivButtonTypes>
-        <button type="button" onClick={ev => props.setBasicModal(ev, true)}>
+      <DivButtons>
+        <Button type="button" onClick={ev => props.setBasicModal(ev, true)}>
           Basic
-        </button>
-      </DivButtonTypes>
+        </Button>
+      </DivButtons>
       <BasicModal setBasicModal={props.setBasicModal} isOpen={props.isOpen} />
     </DivWrapper>
   );

@@ -69,6 +69,7 @@ class Header extends Component {
         <DivHeader>
           <H1Logo>My&nbsp;React&nbsp;Snippets</H1Logo>
           <HeaderNavDesktop
+            dropdownsLink={clientLinks.dropdowns}
             homeLink={clientLinks.home}
             formsLink={clientLinks.forms}
             modalsLink={clientLinks.modals}
@@ -81,6 +82,7 @@ class Header extends Component {
         <HeaderNavMobile
           hamburgerOpen={this.state.hamburgerOpen}
           closeHamburgerMenu={this.closeHamburgerMenu}
+          dropdownsLink={clientLinks.dropdowns}
           homeLink={clientLinks.home}
           formsLink={clientLinks.forms}
           modalsLink={clientLinks.modals}

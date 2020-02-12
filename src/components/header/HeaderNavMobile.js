@@ -14,7 +14,7 @@ const DivWrapper = styled.div`
     position: fixed;
     z-index: 2;
     top: ${props =>
-      props.hamburgeropen === "true" ? rHeights.headerHeight : "-25rem"};
+      props.hamburgeropen === "true" ? rHeights.headerHeight : "-28rem"};
     background-color: ${colors.grayChateau};
     transition: all 0.3s ease-in-out;
     width: 100%;
@@ -64,6 +64,9 @@ const HeaderNavMobile = props => {
         </LinkItem>
         <LinkItem to={`${props.modalsLink}`}>
           <DivLinkItem>Modals</DivLinkItem>
+        </LinkItem>
+        <LinkItem to={`${props.dropdownsLink}`}>
+          <DivLinkItem>Dropdowns</DivLinkItem>
         </LinkItem>
       </nav>
     </DivWrapper>

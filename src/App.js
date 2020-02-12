@@ -5,6 +5,7 @@ import { Route } from "react-router-dom";
 import styled, { createGlobalStyle } from "styled-components";
 
 // Components
+import Dropdowns from "./pageviews/Dropdowns.js";
 import Header from "./components/header/Header.js";
 import Home from "./pageviews/Home.js";
 import Modals from "./pageviews/Modals.js";
@@ -165,8 +166,9 @@ class App extends Component {
             path={`${clientLinks.home}`}
             render={() => <Home {...this.props} />}
           />
-          <Route exact path={`${clientLinks.modals}`} component={Modals} />
+          <Route exact path={`${clientLinks.dropdowns}`} component={Dropdowns} />
           <Route exact path={`${clientLinks.forms}`} component={Forms} />
+          <Route exact path={`${clientLinks.modals}`} component={Modals} />
         </DivContainer>
         <Footer />
       </DivWrapper>
